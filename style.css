@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 2rem;
+}
+
+#primera {
+    background-color: red;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#segunda {
+    background-color: green;
+    height: 300px;
+    width: 100%;
+}
+
+#tercera {
+    background-color: blue;
+    color: white;
+}
+#tercera p {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Mis reglas de estilos cuando estoy en una tableta*/
+    #contenedor {
+        flex-direction: row ;
+    }
+    
+    
+    #segunda {
+        display: inline-block;
+        width: 30%;
+    }
+  
+    #tercera {
+        background-color: lightblue;
+        height: 300px;
+        width: 70%;
+    }
+}
